@@ -1,0 +1,330 @@
+*{
+    font-family:  sans-serif;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.sbm{
+   padding: 20px;
+   
+   
+
+
+}
+.sbm img{
+    height: 40px;
+    width: auto;
+}
+.sbm1,.sbm2{
+display: flex;
+  gap: 30px;
+  flex-direction: column;
+
+}
+.sbm2{
+    margin: 80px 0px;
+}
+
+ .lbdiv{
+    margin: 0px 0px 0px 30px; 
+    height: 30px; 
+    width: 200px;
+    text-decoration: none;
+  color: black;
+    
+    
+} 
+
+.lbdiv img{
+     height: 24px;
+     width: auto;
+    
+}
+
+
+.lbdiv:hover{
+    background-color: rgb(180, 180, 180);
+    border-radius: 10px;
+}
+
+
+ .lbdiv span{
+
+    text-decoration: none;
+  color: black;
+     font-size: 16px; 
+    margin: 0px 20px ;
+    position: relative;
+    top: -4px;
+    font-weight: 700;
+}
+
+.feed{
+    margin: 30px 90px 0px 90px;
+    /* overflow-x: hidden;
+    overflow-y:auto ; */
+     -ms-overflow-style: none; 
+}
+
+
+
+.stcon{
+    height: 180px;
+    width: 615px;
+}
+
+
+
+.left {
+position: absolute;
+            
+            top: 8%;
+            left: 320px;
+             z-index: 50;
+        }
+
+.right {
+  
+   position: absolute;
+           
+            top: 8%;
+            right: 530px;
+            z-index: 50;
+}
+
+
+
+.left,.right{
+    width: 30px;
+    height: 30px;
+}
+.stores{
+  
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    width: 615;
+    gap: 30px;
+    overflow-x: scroll; 
+    overflow-y:  hidden ;
+      scroll-behavior: smooth; 
+}
+.stores::-webkit-scrollbar {
+  display: none;
+}
+
+.store{
+    height: 130px;
+    width: 107px;
+     align-items: center; 
+     cursor: pointer; 
+  
+}
+
+.store img{
+   
+  
+         height: 80px;
+         width: 80px;
+         border-radius: 50%;
+         display: block;
+      z-index: 20; 
+   object-fit: cover;
+}
+.store .div1{
+         
+     
+       height: 87px;
+         width: 87px;
+         border-radius: 50%;
+         display: flex;
+  align-items: center;
+  justify-content: center;
+          z-index: 10; 
+         background-color: #fff;
+      
+}
+.store .div2{
+        top: 0%;
+        height: 95px;
+         width: 95px;
+         border-radius: 50%;
+     display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+   z-index: 5; 
+    
+}
+
+.store h6{
+    font-size: 1em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.posts{
+    margin: 20px 0px 0px 0px;
+     display: flex;
+    flex-direction: column;
+    width: 615;
+    height: auto;
+    gap: 10px;
+    /* overflow-x: hidden; 
+    overflow-y: auto;  */
+}
+
+.post{
+     display: flex;
+     flex-direction: column;
+    /*  align-items: center; */  
+  width: 615;
+  padding: 0px 100px;
+
+ 
+}
+
+.pro {
+      display: flex;
+  gap: px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: start;
+}
+.prol{
+  display: flex;
+  gap: 0px;
+  flex-direction: row;
+  justify-content: start;
+  align-content: start;
+
+}
+
+.pror{
+       display: flex;
+      flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.prol img{
+    height: 45px;
+    width: 50px;
+    border-radius: 50%;
+}
+ .prol h5 ,.prol p{
+    text-align: end;
+    margin:2px 0px 0px 10px ;
+    display: block;
+} 
+.prol p{
+    font-size: 12px;
+}
+.pror img{
+    height: 50px;
+}
+
+.pos{
+
+    height: 500px;
+    width: 400px;
+    border-radius: 5px;
+    margin: 6px 0px;
+}
+
+.lsc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lsc div{
+     display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2px;
+}
+
+.lsc img{
+    height: 30px;
+    width: auto;
+}
+.lsc h4{
+    text-align: center;
+    margin: 5px 0px;
+
+}
+
+.suggest{
+    margin: 45px 170px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-items: start;
+    gap: 20px;
+}
+
+.proh3{
+    margin: 10px 0px 0px 0px;
+    font-size: 14px;
+    color: rgb(0, 102, 255);
+    cursor: pointer;
+}
+
+.proh3:hover{
+    text-decoration: underline;
+}
+
+
+.sto{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.img{
+margin: 300px 0px 0px 0px;
+height: 30px;
+width: 30px;
+}
+
+.promain{
+ 
+  width:85%;
+ 
+  padding: 0px 200px;
+}
+
+.profiles{
+     display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: rgb(255, 255, 255);
+  padding-top: 50px;
+  padding-bottom: 30px;
+  
+}
+
+.profiles button{
+
+    height: 40px;
+    width: 300px;
+    background-color: rgba(211, 211, 211, 0.792);
+    margin: 0px 5px ;
+    border-radius: 10px;
+   border: none;
+}
+
+
