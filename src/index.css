@@ -109,6 +109,7 @@ position: absolute;
     overflow-x: scroll; 
     overflow-y:  hidden ;
       scroll-behavior: smooth; 
+      
 }
 .stores::-webkit-scrollbar {
   display: none;

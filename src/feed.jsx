@@ -24,6 +24,7 @@ export default function Feed(){
 
   const scrollPrev = () => {
     storyRef.current.scrollLeft -= 125;
+  
   };
 
   

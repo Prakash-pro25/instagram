@@ -51,11 +51,8 @@ export default function Follow({ onDataLength }){
 
 
 
-function Pro(props){
-
-
-    return(
-    <div className="pro" style={{margin:"5px"}}> 
+const Pro= props=>
+         <div className="pro" style={{margin:"5px"}}> 
             <div className="prol">
                 <img src={props.profile_pic} alt="" />
                 <div style={{display:"flex", flexDirection:"column", gap: "0px",alignItems: "start",}}>
@@ -64,5 +61,4 @@ function Pro(props){
                 </div>
             </div>
             <div className="pror"><h3 className="proh3" onClick={props.h}>{props.a}</h3></div>
-          </div>);
-}
+          </div>;
