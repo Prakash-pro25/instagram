@@ -43,7 +43,9 @@ export default function Sidebar(){
             nav:"/men"
         },
     ]
-//src\assets\
+//src\assets\   key={logs.id} img={logs.img} name={logs.name} nav={logs.nav}
+
+log.map((logs)=>{console.log({...logs})});
 
     return(
         <div  className='lb'>
@@ -51,7 +53,7 @@ export default function Sidebar(){
          
          <img src="src\assets\Instagram_logo.svg.png" alt="" style={{margin:"30px 30px 30px 30px"}} />
          <div className="sbm1">
-          { log.map((logs)=>   <Menu key={logs.id} img={logs.img} name={logs.name} nav={logs.nav}/>) }
+          { log.map((logs)=>  <Menu key={logs.id} {...logs}/> )  }
         </div>
         <div className="sbm2">
         <Menu img="/menu-hamburger-svgrepo-com.svg" name="more" nav="/"/>    
