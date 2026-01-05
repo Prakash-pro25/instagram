@@ -45,7 +45,7 @@ export default function Sidebar(){
     ]
 //src\assets\   key={logs.id} img={logs.img} name={logs.name} nav={logs.nav}
 
-log.map((logs)=>{console.log({...logs})});
+//log.map((logs)=>{console.log({...logs})});
 
     return(
         <div  className='lb'>
