@@ -43,7 +43,7 @@ const follo=async (id,names,pic,fol)=>
     <div className="suggest">
 
         {proflie? 
-           <Pro  key={proflie.id}  pic={proflie.profile_pic} user={proflie.username} name="Prakash"    a="switch"   />
+           <Pro  key={proflie.id}  profile_pic={proflie.profile_pic} username={proflie.username} name="Prakash"    a="switch"   />
            :<div>loading...</div>}
         <div style={{display:"flex", flexDirection:"row",justifyContent:"space-between"}}>
            <p style={{fontWeight:"bold"}}>Suggested for you</p>
@@ -51,9 +51,7 @@ const follo=async (id,names,pic,fol)=>
          </div>
           {suggest.length > 0? 
            suggest.map((sugg)=>   <Pro  key={sugg.id} 
-                                        pic={sugg.profile_pic} 
-                                        user={sugg.username} 
-                                        name={sugg.folow}  
+                                        {...sugg} 
                                         h={()=>follo(sugg.id,sugg.username,sugg.profile_pic,sugg.folow)}  
                                         a="follow"/>)
            :<div>loading...</div>}
@@ -74,10 +72,10 @@ function Pro(props){
     return(
     <div className="pro"> 
             <div className="prol">
-                <img src={props.pic} alt="" />
+                <img src={props.profile_pic} alt="" />
                 <div style={{display:"flex", flexDirection:"column", gap: "0px",alignItems: "start",}}>
-                    <h5>{props.user}</h5>
-                    <p style={{fontSize:"13px"}}>{props.name}</p>
+                    <h5>{props.username}</h5>
+                    <p style={{fontSize:"13px"}}>{props.folow}</p>
                 </div>
             </div>
             <div className="pror"><h3 className="proh3" onClick={props.h}>{props.a}</h3></div>

@@ -44,11 +44,8 @@ export default function Feed(){
            <div className="posts">
             {datas.map((datao)=> 
             <Posts   key={datao.id} 
-                    pic={datao.user.profile_pic}       
-                    user={datao.user.username}
-                    postim={datao.image}
-                    like={datao.likes}
-                    cap={datao.caption}
+                    {...datao}
+                    {...datao.user}
             />)}
            </div>          
         </div>
@@ -80,22 +77,22 @@ function Posts(props){
         <div className="post">
           <div className="pro"> 
             <div className="prol">
-                <img src={props.pic} alt="" />
-                <div><h5>{props.user}<span style={{fontWeight:"lighter"}}> 8h</span></h5><p>Orignal audio</p>
+                <img src={props.profile_pic} alt="" />
+                <div><h5>{props.username}<span style={{fontWeight:"lighter"}}> 8h</span></h5><p>Orignal audio</p>
                 </div>
             </div>
             <div className="pror"><img src="src\assets\more-horizontal-svgrepo-com (1).svg" alt="" /></div>
           </div> 
-          <img className="pos" src={props.postim} alt="" />
+          <img className="pos" src={props.image} alt="" />
           <div className="lsc">
                <div> 
-                  <img src="public\heart-svgrepo-com.svg" alt="" style={{height:"25px"}}/><h4>{props.like}</h4>
+                  <img src="public\heart-svgrepo-com.svg" alt="" style={{height:"25px"}}/><h4>{props.likes}</h4>
                   <img src="src\assets\message-circle-svgrepo-com.svg" alt="" /><h4>3</h4>
                   <img src="src\assets\share-1-svgrepo-com.svg" alt="" />
                 </div>
                 <img src="src\assets\save-svgrepo-com.svg" alt="" />
           </div>
-          <p>{props.cap}</p>
+          <p>{props.caption}</p>
         </div>
 
     );

@@ -40,7 +40,7 @@ export default function Follow({ onDataLength }){
         
               <h3 style={{margin:"10px",cursor: "pointer"}} onClick={chang[0]}>X</h3> 
               <div style={{padding:"10px"}}>
-       { fol.map((sugg)=>   <Pro  key={sugg.id}  pic={sugg.profile_pic} user={sugg.username} name={sugg.folow} h={()=>remove(sugg.id)}   a="Remove"   />)}  
+       { fol.map((sugg)=>   <Pro  key={sugg.id} {...sugg} h={()=>remove(sugg.id)}   a="Remove"   />)}  
      </div>
     </div>
 
@@ -57,10 +57,10 @@ function Pro(props){
     return(
     <div className="pro" style={{margin:"5px"}}> 
             <div className="prol">
-                <img src={props.pic} alt="" />
+                <img src={props.profile_pic} alt="" />
                 <div style={{display:"flex", flexDirection:"column", gap: "0px",alignItems: "start",}}>
-                    <h5>{props.user}</h5>
-                    <p style={{fontSize:"13px"}}>{props.name}</p>
+                    <h5>{props.username}</h5>
+                    <p style={{fontSize:"13px"}}>{props.folow}</p>
                 </div>
             </div>
             <div className="pror"><h3 className="proh3" onClick={props.h}>{props.a}</h3></div>
