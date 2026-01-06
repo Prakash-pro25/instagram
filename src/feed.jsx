@@ -19,13 +19,23 @@ export default function Feed(){
             const storyRef = useRef(null);
 
   const scrollNext = () => {
+    
     storyRef.current.scrollLeft += 125;
   };
 
   const scrollPrev = () => {
+    
     storyRef.current.scrollLeft -= 125;
-  
   };
+
+          const disref1=useRef(null);
+          const disref2=useRef(null);
+
+  const handlefocus= () =>{
+   
+            disref1.current.style.display="none";
+            disref2.current.style.display="none";
+  }
 
   
  console.log(datas.length);
@@ -33,7 +43,7 @@ export default function Feed(){
         
         <div className="feed">
             <div className="stcon"  >
-               <img onClick={scrollPrev} className="left" src="/previous-back-svgrepo-com.svg" alt="" />
+               <img onClick={scrollPrev} className="left" ref={disref1} src="/previous-back-svgrepo-com.svg" alt="" />
               <div className="stores"  ref={storyRef}>
                    
                  { datas.map((data) => <Store key={data.id} id={data.id}  tot={datas.length}
@@ -41,12 +51,13 @@ export default function Feed(){
                                               username={data.user.username}  />)}
             
               </div>
-                    <img src="/next-svgrepo-com.svg" alt=""  onClick={scrollNext} className="right" /></div>       
+                    <img src="/next-svgrepo-com.svg" alt="" ref={disref2}  onClick={scrollNext} className="right" /></div>       
            <div className="posts">
             {datas.map((datao)=> 
             <Posts   key={datao.id} 
                     {...datao}
                     {...datao.user}
+                    foc={handlefocus}
             />)}
            </div>          
         </div>
@@ -75,7 +86,7 @@ function Posts(props){
 
     return(
         
-        <div className="post">
+        <div className="post" onMouseEnter={props.foc} >
           <div className="pro"> 
             <div className="prol">
                 <img src={props.profile_pic} alt="" />
