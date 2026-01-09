@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Show } from "./App";
-import axios from "axios";
+import axios from "./axios";
 
 
 
@@ -13,7 +13,7 @@ export default function Follow({ onDataLength }){
     const [dem,setdem]=useState(true);
 
     useEffect(()=>{
-        axios.get("http://localhost:3000/follow")
+        axios.get("/follow")
         .then(data=>{setfol(data.data); onDataLength(data.data.length);console.log(fol)})
         .catch(err=>console.log(err));
 
@@ -23,7 +23,7 @@ export default function Follow({ onDataLength }){
 
         const remove= async(id)=>{
 
-            axios.delete(`http://localhost:3000/follow/${id}`)
+            axios.delete(`/follow/${id}`)
             .then(alert("removed"))
             .then(setdem(!dem))
             .catch(err=>console.log(err));
