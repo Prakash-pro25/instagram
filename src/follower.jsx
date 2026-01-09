@@ -36,8 +36,7 @@ export default function Follow({ onDataLength }){
       <div className="sodow" >
 
       </div>
-     <div className="fol"  >
-        
+     <div className="fol"  >    
               <h3 style={{margin:"10px",cursor: "pointer"}} onClick={chang[0]}>X</h3> 
               <div style={{padding:"10px"}}>
        { fol.map((sugg)=>   <Pro  key={sugg.id} {...sugg} h={()=>remove(sugg.id)}   a="Remove"   />)}  
@@ -51,8 +50,9 @@ export default function Follow({ onDataLength }){
 
 
 
+
 const Pro= props=>
-         <div className="pro" style={{margin:"5px"}}> 
+          <div className="pro" style={{margin:"5px"}}> 
             <div className="prol">
                 <img src={props.profile_pic} alt="" />
                 <div style={{display:"flex", flexDirection:"column", gap: "0px",alignItems: "start",}}>
