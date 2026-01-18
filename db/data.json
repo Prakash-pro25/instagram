@@ -154,7 +154,7 @@
       "id": "6",
       "user": {
         "id": 106,
-        "username": "Arun",
+        "username": "Pradeep",
         "profile_pic": "/download (5).jpg"
       },
       "image": "/6.jpg",
@@ -226,7 +226,7 @@
     },
     {
       "id": "106",
-      "username": "Arun",
+      "username": "Pradeep",
       "profile_pic": "/download (5).jpg",
       "folow": "follow by pradeep"
     },
@@ -249,18 +249,6 @@
       "username": "Sanjana",
       "profile_pic": "/download (6).jpg",
       "folow": "follow by kishore"
-    },
-    {
-      "id": "106",
-      "username": "Arun",
-      "profile_pic": "/download (5).jpg",
-      "folow": "follow by pradeep"
-    },
-    {
-      "id": "105",
-      "username": "Thoufic",
-      "profile_pic": "/download (4).jpg",
-      "folow": "follow by maha"
     },
     {
       "id": "103",

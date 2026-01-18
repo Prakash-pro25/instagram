@@ -5,7 +5,7 @@ import { Show } from "./App";
 
 
 
-export default function Profile(props){
+export default function Profile(){
 
 
    const change=useContext(Show);
@@ -48,7 +48,6 @@ export default function Profile(props){
             <Store/>
     </div>
      <hr />
-<h1>hi</h1>
         </div>
 
       );
